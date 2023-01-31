@@ -37,7 +37,7 @@ class Subcategory(models.Model):
 class Product(models.Model):
     QUANTITY_TYPE_CHOICES = (
         ('kg', 'Kilogram'),
-        ('buc', 'Bucata')
+        ('lb','Pound')
     )
 
     owner = models.ForeignKey(User, related_name="products", on_delete=models.CASCADE)
